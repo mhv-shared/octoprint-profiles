@@ -1,0 +1,16 @@
+General
+	Name: Ssquared
+	ID: ssquared
+	Model: 512
+Print Bed
+	Rectangular
+	Lower Left
+	Check heated bed
+	x:y:z: 205mm
+Axes
+	x:10000 mm/min
+	y:10000 mm/min
+	z:960 mm/min
+	e:1500 mm/min
+Hotend & Extruder
+	Nozzle Diameter: 0.5mm
