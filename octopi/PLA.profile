@@ -8,31 +8,35 @@ cool_min_feedrate: 5
 cool_min_layer_time: 10
 end_gcode:
 
-- '; Default end code
-
-G1  Y185  ; Get extruder out of way. 
-
-M107 ; Turn off fan
-
-; Disable all extruder
-
-G90 ; Absolute positioning
-
-G92 E0 ; Reset extruder position
-
-G92 Z0; reset zposition
-
-G00 Z10 F500
-
-M140 S0 ; Disable heated bed
-
-M104 S0 ; turn off extruder
-
-M140 S0 ; turn off bed
-
-M84 ; disable motors'
-
 - '
+
+  ; Default end code
+
+  G1  Y185  ; Get extruder out of way. 
+
+  M107 ; Turn off fan
+
+  ; Disable all extruder
+
+  G90 ; Absolute positioning
+
+  G92 E0 ; Reset extruder position
+
+  G92 Z0; reset zposition
+
+  G00 Z10 F500
+
+  M140 S0 ; Disable heated bed
+
+  M104 S0 ; turn off extruder
+  
+  M140 S0 ; turn off bed
+
+  M84 ; disable motors'
+  
+
+  
+  - '
 
   M104 S0 ;extruder heater off
 
@@ -172,7 +176,7 @@ platform_adhesion: brim
 print_bed_temperature: 50
 print_speed: 50
 print_temperature:
-- 205
+- 215
 - false
 - false
 - false
