@@ -8,9 +8,7 @@ cool_min_feedrate: 5
 cool_min_layer_time: 10
 end_gcode:
 
-- '
-
-  ; Default end code
+- '; Default end code
 
   G1  Y185  ; Get extruder out of way. 
 
@@ -211,21 +209,21 @@ start_gcode:
 
 - '; AFP-512 settings-must be included for proper operation !
 
-G28 ; Home extruder
+	G28 ; Home extruder
 
-G1 X125 Y10  Z10 F1500 ; move off platform
+	G1 X125 Y10  Z10 F1500 ; move off platform
 
-G1 Z2.5; position nozzle
+	G1 Z2.5; position nozzle
 
-G92 E0 ; zero extruder
+	G92 E0 ; zero extruder
 
-G1 E25 F150 ; purge nozzle
+	G1 E25 F150 ; purge nozzle
 
-G92 E0 ; zero extruder
+	G92 E0 ; zero extruder
 
-G1 X110 Z0.1 E1.0 F1000 ; slow wipe
+	G1 X110 Z0.1 E1.0 F1000 ; slow wipe
 
-G1 X100 Z0.25 ; lift'
+	G1 X100 Z0.25 ; lift'
 
 - ';Sliced {filename} at: {day} {date} {time}
 
