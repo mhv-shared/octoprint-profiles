@@ -8,33 +8,30 @@ cool_min_feedrate: 5
 cool_min_layer_time: 10
 end_gcode:
 
-- '
+- '; Default end code
 
-  ; Default end code
+G1  Y185  ; Get extruder out of way. 
 
-  G1  Y185  ; Get extruder out of way. 
+M107 ; Turn off fan
 
-  M107 ; Turn off fan
+; Disable all extruder
 
-  ; Disable all extruder
+G90 ; Absolute positioning
 
-  G90 ; Absolute positioning
+G92 E0 ; Reset extruder position
 
-  G92 E0 ; Reset extruder position
+G92 Z0; reset zposition
 
-  G92 Z0; reset zposition
+G00 Z10 F500
 
-  G00 Z10 F500
+M140 S0 ; Disable heated bed
 
-  M140 S0 ; Disable heated bed
+M104 S0 ; turn off extruder
 
-  M104 S0 ; turn off extruder
-  
-  M140 S0 ; turn off bed
+M140 S0 ; turn off bed
 
-  M84 ; disable motors'
-  
-
+M84 ; disable motors
+'
   
   - '
 
@@ -225,7 +222,9 @@ G92 E0 ; zero extruder
 
 G1 X110 Z0.1 E1.0 F1000 ; slow wipe
 
-G1 X100 Z0.25 ; lift'
+G1 X100 Z0.25 ; lift
+
+'
 
 - ';Sliced {filename} at: {day} {date} {time}
 
