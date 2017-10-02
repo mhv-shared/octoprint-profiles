@@ -1,5 +1,3 @@
-; Updated profile for MDP 512 sSquared Printer
-
 _description: Imported from cura_pla.ini on 2017-07-18 16:30
 _display_name: PLA
 bottom_layer_speed: 25
@@ -11,7 +9,7 @@ cool_min_layer_time: 10
 end_gcode:
 - '; Default end code
 
-G1  Y185  ; Get extruder out of way.
+G1  Y185  ; Get extruder out of way. 
 
 M107 ; Turn off fan
 
