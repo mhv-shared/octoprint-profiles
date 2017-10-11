@@ -110,9 +110,7 @@ G92 E0 ; zero extruder
 
 G1 X110 Z0.1 E1.0 F1000 ; slow wipe
 
-G1 X100 Z0.0 ; lift
-
-'
+G1 X100 Z0.0 ; lift '
 
 support: none
 support_angle: 60
