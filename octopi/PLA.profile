@@ -34,8 +34,8 @@ M84 ; disable motors
 
 fan_enabled: true
 fan_full_height: 0.5
-fan_speed: 50
-fan_speed_max: 50
+fan_speed: 200
+fan_speed_max: 200
 filament_diameter:
 - 1.75
 - false
@@ -59,10 +59,10 @@ outer_shell_speed: 30
 overlap_dual: 0.15
 perimeter_before_infill: true
 platform_adhesion: brim
-print_bed_temperature: 60
-print_speed: 50
+print_bed_temperature: 65
+print_speed: 80
 print_temperature:
-- 220
+- 230
 - false
 - false
 - false
@@ -77,7 +77,7 @@ raft_margin: 3
 raft_surface_layers: 3
 raft_surface_linewidth: 0.4
 raft_surface_thickness: 0.27
-retraction_amount: 4.5
+retraction_amount: 2.5
 retraction_combing: all
 retraction_dual_amount: 16.5
 retraction_enable: true
@@ -104,15 +104,13 @@ G1 Z2.5; position nozzle
 
 G92 E0 ; zero extruder
 
-G1 E25 F150 ; purge nozzle
+G1 E10 F150 ; purge nozzle
 
 G92 E0 ; zero extruder
 
 G1 X110 Z0.1 E1.0 F1000 ; slow wipe
 
-G1 X100 Z0.25 ; lift
-
-'
+G1 X100 Z0.25 ; lift '
 
 support: none
 support_angle: 60
