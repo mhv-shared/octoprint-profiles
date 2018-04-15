@@ -143,11 +143,11 @@ ooze_shield: false
 outer_shell_speed: 30
 overlap_dual: 0.15
 perimeter_before_infill: true
-platform_adhesion: brim
-print_bed_temperature: 60
+platform_adhesion: raft
+print_bed_temperature: 50
 print_speed: 50
 print_temperature:
-- 210
+- 230
 - false
 - false
 - false
